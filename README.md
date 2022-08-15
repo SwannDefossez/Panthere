@@ -1,1 +1,1 @@
-[# Pantherehttps://swanndefossez.github.io/Panthere/](https://swanndefossez.github.io/Panthere/)
+[Panthère](https://swanndefossez.github.io/Panthere/)
