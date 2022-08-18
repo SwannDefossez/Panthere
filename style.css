@@ -524,6 +524,10 @@ button {
             box-shadow: none;
 }
 
+.form-label {
+    width: 100%;
+}
+
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -808,6 +812,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.btn-color {
+    background-color: #383838;
+}
+
 .ltc-white {
     color: #FFFFFF!important;
 }
@@ -838,11 +846,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 footer p {
@@ -1063,6 +1071,9 @@ footer p {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    .lightbox-caption {
+        bottom: -8px;
     }
     
 }
