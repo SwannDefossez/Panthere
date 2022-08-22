@@ -782,7 +782,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(69, 61, 42, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -794,13 +794,20 @@ h4 {
 .bgc-white {
     background-color: #FFFFFF;
 }
+.text-bcg {
+    background-color: rgba(0, 0, 0, 0.60) ;
+}
 
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
 
 .bgc-atomic-tangerine {
-    background-color: #332525;
+    background-color: #F3976C;
+}
+.bcg-darker {
+    display: block;
+    background-color: #8b553c;
 }
 
 .tc-white {
