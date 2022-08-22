@@ -9,6 +9,8 @@ body {
 
 a,
 button {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     outline: none!important;
 }
@@ -32,9 +34,6 @@ a:hover {
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -66,9 +65,6 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
     background-size: auto!important;
 }
 
@@ -292,6 +288,7 @@ a:hover {
     z-index: 1;
 }
 
+
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
@@ -362,12 +359,27 @@ a:hover {
     z-index: 2;
 }
 
+.citation {
+    font-size: 20px;
+    font-style: oblique;
+    color: #636363;
+    text-align: center;
+    
+}
+.nom-citation {
+    font-size: 20px;
+    color: #666666;
+}
+
+
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
         top: 50%;
         right: 20px;
-        transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
     .nav > li .dropdown-menu a,
@@ -472,7 +484,8 @@ button {
     border: 1px solid rgba(0, 0, 0, .08);
     border-bottom-color: rgba(0, 0, 0, .1);
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+            box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
 .icon-md {
@@ -507,7 +520,12 @@ button {
 
 .form-control {
     border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.form-label {
+    width: 100%;
 }
 
 .scrollToTop {
@@ -518,6 +536,8 @@ button {
     right: 20px;
     opacity: 0;
     z-index: 500;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
@@ -550,7 +570,8 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
 
@@ -561,8 +582,12 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #lightbox-modal .modal-dialog {
@@ -612,6 +637,8 @@ a[data-lightbox]:hover img {
     font-size: 20px;
     color: rgba(255, 255, 255, .9);
     background: rgba(0, 0, 0, .5);
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
@@ -651,7 +678,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
@@ -677,7 +704,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -719,7 +746,8 @@ h3 {
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
-    box-shadow: 0px 0px 0px #000000;
+    -webkit-box-shadow: 0px 0px 0px #000000;
+            box-shadow: 0px 0px 0px #000000;
 }
 
 h1 {
@@ -727,7 +755,7 @@ h1 {
 }
 
 h4 {
-    color: #333333!important;
+    color: #333333;
 }
 
 .icons {
@@ -749,11 +777,12 @@ h4 {
 }
 
 .avatar {
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(69, 61, 42, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -765,6 +794,9 @@ h4 {
 .bgc-white {
     background-color: #FFFFFF;
 }
+.text-bcg {
+    background-color: rgba(0, 0, 0, 0.60) ;
+}
 
 .bgc-dark-slate-blue {
     background-color: #364577;
@@ -773,19 +805,22 @@ h4 {
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
-
-.tc-white {
-    color: #F3976C!important;
+.bcg-darker {
+    display: block;
+    background-color: #8b553c;
 }
 
-.btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+.tc-white {
+    color: #ffffff!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
+}
+
+.btn-color {
+    background-color: #383838;
 }
 
 .ltc-white {
@@ -818,11 +853,29 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -862,7 +915,7 @@ h4 {
 
 @media (max-width: 991px) {
     .container {
-        width: 100%;
+        width: 85%;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1026,6 +1079,10 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .lightbox-caption {
+        bottom: -8px;
+    }
+    
 }
 
 @media (max-width: 400px) {
